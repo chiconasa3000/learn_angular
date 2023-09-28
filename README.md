@@ -1,2 +1,2 @@
 # learn_angular
-learning angular
+🥯 learning angular 🥯 
