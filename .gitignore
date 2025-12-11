@@ -1,0 +1,54 @@
+# Compiled JavaScript and TypeScript
+#############################################
+# Compiled output (JavaScript files, sourcemaps) from TypeScript and Angular
+/dist
+/tmp
+/out-tsc
+
+# Dependencies
+#############################################
+# Node modules
+/node_modules
+
+# Logs and Build Artifacts
+#############################################
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Production Build output for static hosting
+# This is usually the contents of the /dist folder, but sometimes users
+# specify a different output path, so we explicitly ignore common files/folders here
+*.log
+*.pnp.*
+.env
+.cache
+
+# Environment
+#############################################
+# Configuration files that are specific to your local environment/machine
+.idea
+.vscode/*
+!.vscode/extensions.json
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.vs/
+.history
+coverage
+
+# Operating System Files
+#############################################
+.DS_Store
+Thumbs.db
+
+# Angular Specific Files
+#############################################
+# The package-lock.json file is generally committed, but some might prefer to ignore it
+# package-lock.json
+
+# If you're using Cypress for end-to-end testing, these might be ignored
+cypress/videos
+cypress/screenshots
