@@ -1,0 +1,56 @@
+.card{
+  width: 300px;
+  border: 12px solid #f8d030;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #eeeeee, #cccccc);
+  padding: 10px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+  font-family: 'Arial', sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  &.hover{
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+  }
+
+  .card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .image-container{
+    background: white;
+    border: 4px solid #808080;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    //centra verticalmente si hay altura fija
+    align-items: center;
+    //altura fija para el cuadro
+    height: 200px;
+    padding: 20px;
+    img{
+      width: 150px;
+      max-width: 80%;
+      height: auto;
+      //si se usa sprites clasicos,
+      //evita que sea vea borrosos
+      image-rendering: pixelated;
+      object-fit: contain;
+    }
+  }
+
+  .ability{
+    border-top: 2px solid #000;
+    padding-top: 5px;
+    font-size: 0.9rem;
+  }
+
+  // Dynamic background based on type
+  &.fire{background: #ff9d55;}
+  &.water{background: #5090d6;}
+  &.grass{background: #63bb5b;}
+
+}
